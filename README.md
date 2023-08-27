@@ -73,6 +73,7 @@
   foo.swap(bar);
   ...
   ```
+  
 ## QUEUE STL 공부
 ### 1. 큐 란?
 * 큐는 먼저들어온 데이터가 먼저나가는 **선입선출(First-In-First-Out)** 의 구조를 가진다.
@@ -151,4 +152,7 @@
     cout << bar.size << endl;
     ```
 
+## DEQUEUE STL 공부
+### 덱이란?
+* 
 ## LIST STL 공부
