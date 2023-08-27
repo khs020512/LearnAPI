@@ -76,8 +76,79 @@
 ## QUEUE STL 공부
 ### 1. 큐 란?
 * 큐는 먼저들어온 데이터가 먼저나가는 **선입선출(First-In-First-Out)** 의 구조를 가진다.
+* front와 rear의 인덱스값을 한방향으로 움직이면서 데이터를 저장 또는 출력한다.
 ![queue-gif](https://github.com/khs020512/STL_STACK/assets/97209803/df3ef1da-1af9-4cae-a8b6-9ba8097a724d)
 
 ### 2. 큐의 구성요소
+* **큐의 생성 연산**
+  * 스택의 생성연산
+  * **queue<데이터 타입> 큐의이름**,의 형태로 생성한다.
+  ```
+  queue<int> myQueue;
+  ```
+* **큐의 공간 확인 연산(empty)**
+  * 큐의 빈공간을 확인하는 연산이다.
+  * bool타입의 함수로 리턴값은 true 또는 false 이다.
+  * **변수이름.empty()** 로 사용한다.
+  ```
+  if(!myQueue.empty()){
+    ...
+  }
+  ```
+* **큐의 크기 확인연산(size)**
+  * 큐에 들어있는 데이터의 개수를 확인하는 연산이다.
+  * * **변수이름.size()** 로 사용한다
+  ```
+  size = myQueue.size;
+  ```
+* **큐의 최선두값 접근연산(front)**
+  *큐의 맨 앞에있는 데이터에 접근하는 연산이다.
+  * **변수이름.front()** 로 사용한다
+   ```
+   myQueue.push(55);
+   myQueue.push(66); // 큐의 데이터 삽입 순서 55 -> 66
+   x = myQueue.front; // 큐의 front값에 접근 -> 55에 접근
+   cout << x; // 55 출력
+   ```
+* **큐의 최후방값 접근연산(back)**
+  * 큐의 맨 마지막에 있는 데이터에 접근하는 연산이다.
+  * **변수이름.back()** 로 사용한다
+    ```
+    myQueue.push(55);
+    myQueue.push(66); // 큐의 데이터 삽입 순서 55 -> 66
+    x = myQueue.back; // 큐의 back값에 접근 -> 66에 접근
+    cout << x; //66 출력
+    ```
+* **큐의 데이터 삽입연산(push)**
+  * 큐의 맨 뒤에 데이터를 삽입하는 연산이다.
+  *  **변수이름.push(데이터 값)** 로 사용한다.
+    ```
+    myQueue.push(55);
+    ```
+* **큐의 데이터 삭제연산(pop)**
+  * 큐의 맨 앞에 데이터를 삭제하는 연산이다.
+  *  **변수이름.pop()** 로 사용한다.
+    ```
+    x = myQueue.pop();
+    ```
+* **큐의 클래스형 데이터 삽입연산(emplace)**
+  * 큐의 맨 뒤에 클래스형 데이터를 삭제하는 연산이다.
+  *  **변수이름.emplace(클래스형 테이터)** 로 사용한다.
+    ```
+    queue<string> myQueue;
+    myQueue.emplace("First Sentence");
+    myQueue.emplace("Second Sentence");
+    ```
+* **큐의 교환 연산(swap)**
+  * 서로 다른 큐를 교환하는 연산이다.
+  *  **변수이름.swap(바꿀 변수의 이름)** 로 사용한다.
+    ```
+    queue<int> foo,bar;
+    foo.push(10),foo.push(20);
+    bar.push(111);
+    foo.swap(bar);
+    cout << foo.size << endl;
+    cout << bar.size << endl;
+    ```
 
 ## LIST STL 공부
