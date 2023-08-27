@@ -76,7 +76,7 @@
 ## QUEUE STL 공부
 ### 1. 큐 란?
 * 큐는 먼저들어온 데이터가 먼저나가는 **선입선출(First-In-First-Out)** 의 구조를 가진다.
-* https://images.velog.io/images/godkor200/post/b31ed9db-aa01-4ac7-a3cd-0fd00295a65e/queue-gif.gif
+! https://images.velog.io/images/godkor200/post/b31ed9db-aa01-4ac7-a3cd-0fd00295a65e/queue-gif.gif
 ### 2. 큐의 구성요소
 
 ## LIST STL 공부
