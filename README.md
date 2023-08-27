@@ -1,11 +1,11 @@
-# LearnAPI
-### API 공부 순서
-1. API에 대한 구조 공부
-2. API 구성요소 공부
-3. API를 이용한 예시 코드 작성
+# Learn C++ STL
+### STL 공부 순서
+1. STL에 대한 구조 공부
+2. STL 구성요소 공부
+3. STL를 이용한 예시 코드 작성
 
 
-## STACk API 공부
+## STACK STL 공부
 ### 1. 스택이란?
 * 스택은 컴퓨터에서 가장 많이 사용되는 자료 구조이다.
 * LIFO : (Last-In-First-Out) 후입선출의 구조를 가진다.
@@ -73,5 +73,10 @@
   foo.swap(bar);
   ...
   ```
+## QUEUE STL 공부
+### 1. 큐 란?
+* 큐는 먼저들어온 데이터가 먼저나가는 **선입선출(First-In-First-Out)** 의 구조를 가진다.
+* https://images.velog.io/images/godkor200/post/b31ed9db-aa01-4ac7-a3cd-0fd00295a65e/queue-gif.gif
+### 2. 큐의 구성요소
 
-## LIST API 공부
+## LIST STL 공부
